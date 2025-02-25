@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+
+nav {
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 1000;
+}
+
+nav .logo img {
+  width: 80px;
+  cursor: pointer;
+  margin: 7px 0;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 17px;
+  transition: 0.1s;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #fac031;
+  display: block;
+  transition: 0.2s linear;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul li a:hover {
+  color: #fac031;
+}
+
+
+.button button {
+  background: #fac031;
+  width: 100px;
+  height: 40px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+button a{
+  text-decoration: none;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.propos {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.propos img {
+  width: 30%;
+  height: 30%;
+}
+
+.container {
+  width: 80%;
+  margin: 110px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.container h2 {
+  text-align: center;
+  color: #FFC436;
+  font-weight: bolder;
+}
+
+.restaurant-description p {
+  text-align: justify;
+  line-height: 1.6;
+  width: 500px;
+
+}
+
+.div_video {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+.chef-team {
+  padding-top: 20px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.chef {
+  text-align: center;
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+.chef img {
+  height: 200px;
+  width: 70%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.chef h3 {
+  margin-bottom: 5px;
+  color: #FFC436;
+}
+
+.chef p {
+  color: #777;
+}
+
+
+
+footer{
+  width: 80%;
+  padding: 30px 0 0 0;
+  background: #fff;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+footer .footer_main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer .footer_main .footer_tag{
+  text-align: center;
+}
+
+footer .footer_main .footer_tag h2{
+  color: #000;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+footer .footer_main .footer_tag p{
+  margin: 10px 0;
+}
+
+footer .footer_main .footer_tag i{
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+footer .footer_main .footer_tag i:hover{
+  color: #fac031;
+}
+
+footer .end{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+footer .end span{
+  color: #fac031;
+  margin-left: 10px;
+}

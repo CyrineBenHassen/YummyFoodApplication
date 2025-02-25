@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #FFFFFF; 
+}
+.header_menu{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+nav {
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 1000;
+}
+
+nav .logo img {
+    width: 80px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #fac031;
+}
+
+
+.button button {
+    background: #fac031;
+    width: 100px;
+    height: 40px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    padding-top: 150px;
+    font-size: 100px;
+    position: absolute;
+    color: #FFf;
+    font-family: 'Dancing Script', cursive;
+    
+
+}
+.type_order {
+    margin-top: 100px;
+    padding-top: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.type_order button{
+    width:150px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    height: 30px;
+    margin-left:5px;
+    border: none;
+    color: #fff;
+    background: #fac031;
+}
+
+.menu {
+    margin-top: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.menu_box {
+    margin: 20px;
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.menu_box img {
+    width:90%;
+    height: 45%;
+    border-radius: 10px; 
+}
+
+.menu_box p {
+    font-size: 12px;
+}
+
+.menu_box button {
+    color: #FFf;
+    background: #fac031;
+    width: 90%;
+    height: 30px;
+    border: none;
+}
